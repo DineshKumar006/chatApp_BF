@@ -5,15 +5,18 @@
 }
 #btn{
 background-image: url('../img/map.jpeg');
-background-size: 56.5px 50px;
+background-size: 59.7px 57px;
 background-repeat: no-repeat;
-width: 25%;
+width: 4.5%;
 height: 62.5px;
-margin: auto;
+margin-top: 5px;
 border: 2px solid #333;
 border-radius: 50px;
 margin-left: 89px;
 padding: 5px;
+position: relative;
+position: absolute;
+
 
 }
 .activeUsers{
@@ -23,6 +26,7 @@ padding: 5px;
 }
 .group-title{
     text-align: center;
+    margin-top: 70px;
 }
 html {
   font-size: 16px;
