@@ -4,21 +4,43 @@
   box-sizing: border-box;
 }
 #btn{
-background-image: url('../img/map.jpeg');
-background-size: 59.7px 57px;
-background-repeat: no-repeat;
-width: 4.5%;
-height: 62.5px;
-margin-top: 5px;
-border: 2px solid #333;
-border-radius: 50px;
-margin-left: 89px;
+
+width: 15%;
 padding: 5px;
-position: relative;
 position: absolute;
+height: 55.5px;
+border-radius: 50px;
+margin-left: 17px;
+margin-top: 5px;
+background-image: url('../img/map.jpeg');
+background-size: 50.7px 53px;
 
 
 }
+
+/* @media only screen and (min-width:300px) {
+
+    #btn{
+        width:10%
+    }
+  
+}
+
+@media only screen and (min-width:600) {
+
+    #btn{
+        width:10%
+    }
+  
+}
+@media only screen and (min-width:700) {
+
+    #btn{
+        width:4.5%
+    }
+  
+} */
+
 .activeUsers{
     color: greenyellow;
     font-size: large;
@@ -72,8 +94,8 @@ input {
 #btn:disabled {
     cursor: default;
     background-image:url('../img/off.png');
-    background-size: cover;
-  }
+    background-size: 50.7px 53px;
+}
 
 #sendBtn:hover {
   background: rgb(193, 251, 106);
