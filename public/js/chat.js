@@ -19,14 +19,16 @@ socket.on('LocationUrl',(data)=>{
 })
 
 //event handler fo UserRoomData
-$sidebar_template=document.querySelector('#sidebar-template').innerHTML
-$chat_sidebar=document.querySelector('#chat_sidebar')
+const $sidebar_template=document.querySelector('#sidebar-template').innerHTML
+const $chat_sidebar=document.querySelector('#chat_sidebar')
 socket.on('UserRoomData',(data)=>{
     const {roomname,usersInRoom}=data
-    const htmlData=Mustache.render($sidebar_template,{RoomName:roomname,usersList:usersInRoom})
+    const htmlData=Mustache.render($sidebar_template,{RoomName:roomname.toUpperCase() ,usersList:usersInRoom})
   $chat_sidebar.innerHTML=htmlData
     // console.log(usersInRoom)
 })
+
+//items handler
 
 
 const autoScroll=()=>{
@@ -56,11 +58,10 @@ const autoScroll=()=>{
 }
 
 
-const $FormInput=document.querySelector('.txt')
+ $FormInput=document.querySelector('.txt')
 // const $FormInput=document.querySelector('input')
-const $Form=document.querySelector('.submitForm')
-const $FormBtn=document.querySelector('.btn')
-
+$Form=document.querySelector('.submitForm')
+ $FormBtn=document.querySelector('#sendBtn')
 
 // Message socket
 $Form.addEventListener('submit',(event)=>{
@@ -88,6 +89,7 @@ $Form.addEventListener('submit',(event)=>{
 
 
 // Location socket
+
 $LocationBtn=document.querySelector('.location');
 
 $LocationBtn.addEventListener('click',()=>{
