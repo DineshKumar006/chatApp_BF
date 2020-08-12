@@ -38,23 +38,16 @@ const autoScroll=()=>{
     const msgStyle=getComputedStyle($newMessage);
     const  newMsgMargin=parseInt(msgStyle.marginBottom)
    const  newMsgHeight=$newMessage.offsetHeight + newMsgMargin;
-
    //visible height
    const visibleHeight=$uiMsg.offsetHeight
-
   //height of container
    const containerHeight=$uiMsg.scrollHeight
-
     //How far i have scrolled
     const scrollOffsetHeight=$uiMsg.scrollTop + visibleHeight
-
     if(containerHeight-newMsgHeight <=scrollOffsetHeight){
-
         $uiMsg.scrollTop = $uiMsg.scrollHeight
-
         // console.log( $uiMsg.scrollTop, $uiMsg.scrollHeight,newMsgHeight,scrollOffsetHeight,$uiMsg.scrollTop)
     }
-
 }
 
 

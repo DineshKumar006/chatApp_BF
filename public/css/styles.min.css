@@ -3,18 +3,30 @@
   padding: 0;
   box-sizing: border-box;
 }
+.imgContainer{
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
 #btn{
-
-width: 15%;
+width:55px;
 padding: 5px;
-position: absolute;
+position: fixed;
 height: 55.5px;
 border-radius: 50px;
-margin-left: 17px;
 margin-top: 5px;
-background-image: url('../img/map.jpeg');
 background-size: 50.7px 53px;
 
+
+}
+
+#btn img{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  width: 100%;
+  height: 42px;
 
 }
 
@@ -94,7 +106,7 @@ input {
 #btn:disabled {
     cursor: default;
     background-image:url('../img/off.png');
-    background-size: 50.7px 53px;
+    background-size: 30px 30px;
 }
 
 #sendBtn:hover {
